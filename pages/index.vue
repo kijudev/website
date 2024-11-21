@@ -26,7 +26,9 @@
         class="absolute top-0 right-0 w-[60dvw] min-h-screen flex flex-col bg-blue-700"
     >
         <div class="flex w-full h-screen items-center justify-center">
-            <h1 class="font-black text-4xl font-sans">Under construction 🚧</h1>
+            <h1 class="font-black text-4xl font-sans">
+                {{ $t("underConstruction") }}
+            </h1>
         </div>
     </div>
     <footer class="h-32 w-full bg-black"></footer>
