@@ -1,35 +1,33 @@
 <template>
     <div
-        class="sticky top-0 left-0 w-[40dvw] h-screen p-16 bg-black flex flex-col gap-16"
+        class="w-screen h-screen flex items-center justify-center flex-col p-8 gap-8"
     >
-        <header>
-            <h1 class="font-thin text-4xl text-blue-100 font-mono">
-                JAKUB - KIJU - KIJEK
-            </h1>
-        </header>
-        <nav>
-            <ol class="flex flex-col gap-4">
-                <li
-                    class="text-2xl font-mono cursor-pointer text-blue-100 w-fit hover:translate-x-4 hover:text-blue-400 transition-all"
-                >
-                    about me
+        <nav
+            class="w-full p-2 sm:p-4 border-2 border-white flex justify-between items-center"
+        >
+            <ul>
+                <li class="px-2">
+                    <NuxtLink to="/blog" class="font-mono underline text-xl"
+                        >Blog</NuxtLink
+                    >
                 </li>
-                <li
-                    class="text-2xl font-mono cursor-pointer text-blue-100 w-fit hover:translate-x-4 hover:text-blue-400 transition-all"
-                >
-                    tech stack
+            </ul>
+            <div></div>
+            <ul>
+                <li>
+                    <LocaleSwitch />
                 </li>
-            </ol>
+            </ul>
         </nav>
-    </div>
-    <div
-        class="absolute top-0 right-0 w-[60dvw] min-h-screen flex flex-col bg-blue-700"
-    >
-        <div class="flex w-full h-screen items-center justify-center">
-            <h1 class="font-black text-4xl font-sans">
-                {{ $t("underConstruction") }}
-            </h1>
+        <div class="w-full h-full border-2 border-white flex flex-col p-8">
+            <header class="flex flex-col items-center sm:items-start">
+                <h1
+                    class="font-mono text-2xl md:text-4xl lg:text-6xl font-light"
+                >
+                    JAKUB - KIJU - KIJEK
+                </h1>
+                <h2>{{ $t("underConstruction") }}</h2>
+            </header>
         </div>
     </div>
-    <footer class="h-32 w-full bg-black"></footer>
 </template>

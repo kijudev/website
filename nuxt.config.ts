@@ -8,6 +8,6 @@ export default defineNuxtConfig({
         vueI18n: "~/i18n/config.ts",
         strategy: "prefix_except_default",
         locales: ["en", "pl"],
-        defaultLocale: "en",
+        defaultLocale: "pl",
     },
 });
