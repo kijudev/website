@@ -4,8 +4,18 @@
 @theme {
 }
 
-body {
-    @apply bg-black;
+:root {
+    --ui-bg: #000000;
+    --ui-bg-elevated: #000000;
+
+    /* Default border color */
+    --ui-border: var(--ui-color-neutral-200);
+    /* Subtle border */
+    --ui-border-muted: var(--ui-color-neutral-200);
+    /* More prominent border */
+    --ui-border-accented: var(--ui-color-neutral-300);
+    /* Inverted border color */
+    --ui-border-inverted: var(--ui-color-neutral-900);
 }
 
 .MARKDOWN {

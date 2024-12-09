@@ -1,17 +1,13 @@
 <template>
+    <Navigation />
     <div
-        class="w-screen h-screen flex items-center justify-center flex-col p-8 gap-8"
+        class="border-2 m-4 sm:m-6 p-4 sm:p-6 flex flex-col items-center sm:items-start"
     >
-        <Navigation />
-        <div class="w-full h-full border-2 border-white flex flex-col p-8">
-            <header class="flex flex-col items-center sm:items-start">
-                <h1
-                    class="font-mono text-2xl md:text-4xl lg:text-6xl font-light"
-                >
-                    JAKUB - KIJU - KIJEK
-                </h1>
-                <h2>{{ $t("underConstruction") }}</h2>
-            </header>
-        </div>
+        <header class="font-mono text-center sm:text-start">
+            <h1 class="font-bold text-2xl sm:text-3xl md:text-4xl">
+                JAKUB - KIJU - KIJEK
+            </h1>
+            <h2 class="mt-2 sm:mt-4">{{ $t("underConstruction") }}</h2>
+        </header>
     </div>
 </template>

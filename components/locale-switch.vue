@@ -4,13 +4,15 @@ const switchLocalePath = useSwitchLocalePath();
 </script>
 
 <template>
-    <div class="flex border-2 border-white w-fit">
+    <div
+        class="flex border-2 border-white w-fit h-8 sm:h-10 text-xs sm:text-sm"
+    >
         <NuxtLink
             v-for="itemLocale in locales"
             :key="itemLocale.code"
             :to="switchLocalePath(itemLocale)"
             :class="{
-                'w-10 h-10 flex items-center justify-center': true,
+                'w-8 sm:w-10 flex items-center justify-center': true,
                 'bg-white text-black': itemLocale === locale,
             }"
         >

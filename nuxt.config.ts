@@ -10,4 +10,10 @@ export default defineNuxtConfig({
         locales: ["en", "pl"],
         defaultLocale: "pl",
     },
+    app: {
+        rootAttrs: {
+            "vaul-drawer-wrapper": "",
+            class: "bg-[var(--ui-bg)]",
+        },
+    },
 });
