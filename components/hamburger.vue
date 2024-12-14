@@ -8,7 +8,7 @@ function handleClick() {
 
 <template>
     <button
-        class="overflow-hidden outline-none border-none flex flex-col justify-between w-10 h-8 cursor-pointer py-0.5"
+        class="overflow-hidden outline-none border-none flex flex-col justify-between w-10 h-8 cursor-pointer p-0.5"
         @click="handleClick"
     >
         <span
