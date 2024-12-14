@@ -20,7 +20,7 @@ export default {
         home: "Strona Główna",
         blog: "Blog",
         portfolio: "Portfolio",
-        projects: "Projects",
+        projects: "Projekty",
         aboutMe: "O mnie",
     },
 } as Messages;

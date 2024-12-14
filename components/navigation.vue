@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useBreakpoints, breakpointsTailwind } from "@vueuse/core";
+
 const isHamburgerOpen = ref(false);
 const route = useRoute();
 const getRouteBaseName = useRouteBaseName();
@@ -15,10 +17,21 @@ const routeNameTable = computed(() => ({
 const routeName = computed(() => {
     const pageName = getRouteBaseName(route);
 
+    if (pageName.includes("blog")) {
+        return t("links.blog");
+    }
+
     // @ts-ignore
     const name = routeNameTable.value[pageName];
 
     return name ?? t("home");
+});
+
+const breakpoints = useBreakpoints(breakpointsTailwind);
+const smOrLarger = breakpoints.greaterOrEqual("md");
+
+watch(smOrLarger, () => {
+    isHamburgerOpen.value = false;
 });
 </script>
 
