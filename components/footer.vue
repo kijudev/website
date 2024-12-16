@@ -3,9 +3,7 @@ const { copy } = useClipboard();
 </script>
 
 <template>
-    <footer
-        class="absolute bottom-0 m-4 sm:m-6 px-4 py-6 md:px-8 sm:py-4 border-2"
-    >
+    <footer class="px-4 py-6 md:px-8 sm:py-4 border-2">
         <ul class="flex gap-8 justify-center items-center flex-wrap">
             <li class="flex items-center">
                 <span class="text-gray-400 mr-2">Email:</span>
