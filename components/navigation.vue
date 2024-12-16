@@ -43,6 +43,10 @@ const smOrLarger = breakpoints.greaterOrEqual("md");
 watch(smOrLarger, () => {
     isHamburgerOpen.value = false;
 });
+
+watch(route, () => {
+    isHamburgerOpen.value = false;
+});
 </script>
 
 <template>

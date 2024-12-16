@@ -6,7 +6,9 @@ const { data, error } = await useAsyncData(route.path, () =>
 </script>
 
 <template>
-    <pre v-if="error">{{ error }}</pre>
+    <!-- <pre v-if="error">{{ error }}</pre>
     <ContentRenderer v-if="data" :value="data" class="MARKDOWN">
-    </ContentRenderer>
+    </ContentRenderer> -->
+
+    {{ $t("underConstruction") }}
 </template>
