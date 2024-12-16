@@ -27,6 +27,16 @@ const routeName = computed(() => {
     return name ?? t("home");
 });
 
+const routePath = computed(() => {
+    const pageName = getRouteBaseName(route);
+
+    if (pageName === "blog-slug") {
+        return "/blog";
+    }
+
+    return route.path;
+});
+
 const breakpoints = useBreakpoints(breakpointsTailwind);
 const smOrLarger = breakpoints.greaterOrEqual("md");
 
@@ -36,24 +46,24 @@ watch(smOrLarger, () => {
 </script>
 
 <template>
-    <div
-        class="sticky m-4 sm:m-6 p-4 sm:px-6 border-2 flex md:flex-row-reverse justify-between items-center gap-4"
+    <nav
+        class="p-4 md:px-8 border-2 flex md:flex-row-reverse justify-between items-center gap-4 w-full"
     >
         <LocaleSwitch />
         <LinkList class="not-md:hidden" />
-        <div class="not-lg:hidden text-blue-400 flex items-center">
+        <NuxtLinkLocale :to="routePath" class="not-lg:hidden flex items-center">
             <UIcon
                 name="solar:double-alt-arrow-right-bold"
-                class="text-blue-400 text-lg md:text-xl -mx-1"
+                class="text-lg md:text-xl -mx-1"
             />
             <span class="mx-1">{{ routeName }}</span>
             <UIcon
                 name="solar:double-alt-arrow-left-bold"
-                class="text-blue-400 text-lg md:text-xl -mx-1"
+                class="text-lg md:text-xl -mx-1"
             />
-        </div>
+        </NuxtLinkLocale>
         <Hamburger class="md:hidden" v-model:open="isHamburgerOpen" />
-    </div>
+    </nav>
     <UDrawer
         :open="isHamburgerOpen"
         :handle="false"

@@ -20,7 +20,7 @@
                 class="text-white text-4xl md:text-2xl md:hidden"
             />
         </li>
-        <li
+        <!-- <li
             class="flex items-center gap-1 transition-transform not-md:p-2 cursor-pointer not-md:hover:translate-x-4 md:hover:-translate-y-1"
         >
             <NuxtLinkLocale to="/aboutme">{{
@@ -30,7 +30,7 @@
                 name="solar:double-alt-arrow-right-bold"
                 class="text-white text-4xl md:text-2xl md:hidden"
             />
-        </li>
+        </li> -->
         <li
             class="flex items-center gap-1 transition-transform not-md:p-2 cursor-pointer not-md:hover:translate-x-4 md:hover:-translate-y-1"
         >

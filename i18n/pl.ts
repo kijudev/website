@@ -5,14 +5,11 @@ export default {
     pages: {
         home: {
             title: "JAKUB - KIJU - KIJEK",
-            heading: "Pasja programowania",
+            heading: "Developer, kinomaniak, muzyk po godzinach",
             desciption: `
-                Odkąd pamiętam zawsze fascynował mnie świat wokół, to jak i dlaczego działał.
-                Tworzenie zawsze było moją pasją, dlaczego zacząłem programować, znalazłem sposób jak zbudować coś z niczego.
-                Teraz przelewam moją całą moją pasję w nawet najmniejsze z projektów. 
-            `
-                .replaceAll("\n", " ")
-                .trim(),
+                Lubię tworzyć coś z niczego.
+                Aktualnie uczę się w szkole średniej.
+            `,
             moreAboutMe: "Więcej o mnie",
         },
     },
