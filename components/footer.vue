@@ -3,7 +3,7 @@ const { copy } = useClipboard();
 </script>
 
 <template>
-    <footer class="px-4 py-6 md:px-8 sm:py-4 border-2">
+    <footer class="px-4 py-6 md:px-8 sm:py-4 border-t-2 border-r-2 mt-auto">
         <ul class="flex gap-8 justify-center items-center flex-wrap">
             <li class="flex items-center">
                 <span class="text-gray-400 mr-2">Email:</span>
@@ -20,7 +20,7 @@ const { copy } = useClipboard();
                     dev@kiju.page
                 </button>
             </li>
-            <li class="hover:text-blue-400">
+            <li class="hover:text-purple-400">
                 <a
                     href="https://github.com/kijudev"
                     target="_blank"
@@ -33,7 +33,7 @@ const { copy } = useClipboard();
                     <span class="transition-colors">Github</span>
                 </a>
             </li>
-            <li class="hover:text-blue-400">
+            <li class="hover:text-amber-400">
                 <a
                     href="https://www.instagram.com/kijukijuuu"
                     target="_blank"

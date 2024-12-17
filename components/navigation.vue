@@ -44,14 +44,14 @@ watch(smOrLarger, () => {
     isHamburgerOpen.value = false;
 });
 
-watch(route, () => {
+const handleNavigation = () => {
     isHamburgerOpen.value = false;
-});
+};
 </script>
 
 <template>
     <nav
-        class="p-4 md:px-8 border-2 flex md:flex-row-reverse justify-between items-center gap-4 w-full"
+        class="p-4 md:px-8 border-b-2 border-l-2 flex md:flex-row-reverse justify-between items-center gap-4 w-full font-mono"
     >
         <LocaleSwitch />
         <LinkList class="not-md:hidden" />
@@ -77,14 +77,14 @@ watch(route, () => {
     >
         <template #title>
             <button
-                class="float-right font-mono cursor-pointer text-4xl p-4"
+                class="float-right cursor-pointer text-2xl p-4"
                 @click="isHamburgerOpen = false"
             >
                 X
             </button>
         </template>
         <template #body>
-            <LinkList />
+            <LinkList @navigation="handleNavigation" />
         </template>
     </UDrawer>
 </template>
